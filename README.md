@@ -1,7 +1,7 @@
 <p align="center">
     <img src="./icon/windows12.svg" width="100" height="100">
 </p>
-<h1 align="center">win12原创作者：谭景元（tjy-gitnub）</h1>
+<h1 align="center">win12原创作者：谭景元（tjy-gitnub）[项目地址](https://github.com/tjy-gitnub/win12)</h1>
 <p align="center" class="shields">
   <a href="https://github.com/tjy-gitnub/win12/issues" style="text-decoration:none">
     <img src="https://img.shields.io/github/issues/tjy-gitnub/win12.svg" alt="GitHub issues"/>
