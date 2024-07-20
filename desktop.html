@@ -9,15 +9,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
 
-	<!-- Windows 12 网页版 谭景元原创  -->
+	<!-- Windows 12 网页版 -->
 
-	<!-- Windows 12 网页版是一个开放源项目,
-	希望让用户在网络上预先体验 Windows 12,
-	内容可能与 Windows 12 正式版本不一致。
-	使用标准网络技术，例如 HTML、CSS 和 JavaScript，
-	此项目绝不附属于微软，且不应与微软操作系统或产品混淆，
-	这也不是 Windows365 cloud PC
-	本项目中微软、Windows 和其他示范产品是微软公司的商标 -->
+	<!-- Administrator：
+	欢迎回到windows12，祝您使用娱快！
+	                                ＿＿微软 -->
 	<link rel="stylesheet" href="./desktop.css">
 	<link rel="stylesheet" href="bootstrap-icons.css">
 	<!-- Apps style -->
@@ -289,7 +285,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="user-clip0"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill1"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill2"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip0)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill1)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill2)" fill-rule="evenodd" /></g></svg>
 			</div>
 			<p style="width: 100%;text-align: center;margin: -50px 0 20px 0;font-size: 30px;">Administrator</p>
-			<input type="text" class="input" win12_title="搜索" placeholder="在这里输入你要搜索的内容" onfocus="hide_startmenu();
+			<input type="text" class="input" win12_title="搜索" placeholder="在这里输入您要搜索的内容" onfocus="hide_startmenu();
 				$('#search-btn').addClass('show');
 				$('#search-win').addClass('show-begin');
 				setTimeout(() => {
@@ -319,10 +315,10 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 					<img src="icon/run.svg">
 					<p>运行</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于Win12网页版'])"
+				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于windows'])"
 					onclick="openapp('about');hide_startmenu();">
 					<img src="icon/about.svg">
-					<p>关于Win12网页版</p>
+					<p>关于windows</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', '任务管理器'])"
 					onclick="openapp('taskmgr');hide_startmenu();">
@@ -383,7 +379,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				<a oncontextmenu="return showcm(event, 'smlapp', ['wsa', '适用于 Android™️ 的 Windows 子系统'])"
 					onclick="openapp('wsa');hide_startmenu();">
 					<img src="icon/wsa.png">
-					<p>适用于 Android™️ 的 Windows 子系统</p>
+					<p>适用于 Android 的 Windows 子系统</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['windows12', 'Windows 12'])"
 					onclick="openapp('windows12');hide_startmenu();">
@@ -466,7 +462,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();"
 						oncontextmenu="return showcm(event,'smapp',['about','关于 Win12 网页版'])">
 						<img src="icon/about.svg">
-						<p>关于Win12网页版</p>
+						<p>关于windows</p>
 					</a>
 					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();"
 						oncontextmenu="return showcm(event,'smapp',['explorer','文件资源管理器'])">
@@ -512,18 +508,18 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 					</div>
 				</div>
 				<div class="apps">
-					<a class="a tj-obj act"><img src="icon/files/ppt.png"><div><p>科学地使用瓶盖.pptx</p><p>5 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>可口可乐瓶盖.jpg</p><p>7 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>瓶盖构造图.jpg</p><p>16 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/word.png"><div><p>瓶盖的构造及作用.docx</p><p>24 分钟前</p></div></a>
-					<a class="a tj-obj act"><img src="icon/files/excel.png"><div><p>可口可乐瓶盖厚度.xlsx</p><p>35 分钟前</p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/ppt.png"><div><p>windows12创作说明.pptx</p><p>5 分钟前</p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>毕业照.jpg</p><p>7 分钟前</p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/img.png"><div><p>毕业.jpg</p><p>16 分钟前</p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/word.png"><div><p>同学档案.docx</p><p>24 分钟前</p></div></a>
+					<a class="a tj-obj act"><img src="icon/files/excel.png"><div><p>六十班.xlsx</p><p>35 分钟前</p></div></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="search-win">
 		<!-- 搜索框 -->
-		<input type="text" class="input" placeholder="在这里输入你要搜索的内容" id="search-input"
+		<input type="text" class="input" placeholder="在这里输入您要搜索的内容" id="search-input"
 			oninput="apps.search.search(this.value.length)">
 		<input-before class="bi bi-search"></input-before>
 		<div class="tab">
@@ -549,7 +545,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 						$('#search-win').removeClass('show-begin');
 					}, 200);">
 						<img src="icon/about.svg">
-						<p>关于Win12网页版</p>
+						<p>关于windows</p>
 					</a>
 				</list>
 			</div>
@@ -713,11 +709,11 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		<div class="news">
 			<div class="bar">
 				<p class="tit">新闻</p>
-				<p style="color: #7f7f7f;margin-right: 5px;margin-top: 2px;">注意: 新闻内容均不属实 </p>
+				<p style="color: #7f7f7f;margin-right: 5px;margin-top: 2px;">注意: 新闻内容源于网络 </p>
 			</div>
 			<div class="content">
 				<div class="card" style="grid-column: 1/6;grid-row: 1/3;color: #fff;background: var(--bgul);background-position:0 -278px;background-size: 100%;">
-					<p class="tit" style="font-size: 20px;margin: 90px 0 0 30px;text-shadow: 0 0 8px #000;">Windows12 v6.0 发布</p>
+					<p class="tit" style="font-size: 20px;margin: 90px 0 0 30px;text-shadow: 0 0 8px #000;">2025年微软发明windows12</p>
 					<a class="a" style="margin: 5px 0 0 50px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;" onclick="hide_widgets();
 					openapp('about');if($('.window.about').hasClass('min'))minwin('about');
 					$('#win-about>.about').removeClass('show');$('#win-about>.update').addClass('show');
@@ -725,49 +721,49 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				</div>
 				<div class="card"
 					style="grid-column: 4/6;grid-row: 7/9;background:url(img/win13.jpg) right;background-size: cover;">
-					<p class="tit" style="margin: 70px 0 0 10px;color: #fff;">Windows13 即将发布，官方透露: 将自带 Macos 子系统</p>
+					<p class="tit" style="margin: 70px 0 0 10px;color: #fff;">苹果公司的新产品</p>
 					<a class="a"
 						style="margin: 5px 0 0 80px;font-size: 17px;color: #9dd0fb;text-shadow: 0 0 3px #000;">详细信息
 						></a>
 				</div>
 				<div class="card"
 					style="grid-column: 4/6;grid-row: 3/5;background:linear-gradient(#00000000,var(--bg) 70%),url(img/win11.jpg) center;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 0 10px;">Windows11 将于下周停止支持</p>
+					<p class="tit" style="margin: 100px 0 0 10px;">微软发布新产品</p>
 					<a class="a" style="margin: 5px 0 0 80px;font-size: 17px;">详细信息 ></a>
 				</div>
 				<div class="card"
 					style="grid-column: 1/3;grid-row: 5/7;background:linear-gradient(#00000000,#111 80%),url(img/corsiri.svg) bottom;background-size: 150%;">
-					<p class="tit" style="margin: 80px 0 0px 10px;color: #fff;">2029年,微软终重拾Cortana 微软员工透露:将与Siri整合</p>
+					<p class="tit" style="margin: 80px 0 0px 10px;color: #fff;">siri</p>
 					<a class="a" style="margin: 0 0 0 80px;font-size: 17px;color: #9dd0fb;">详细信息 ></a>
 				</div>
 				<div class="card"
 					style="grid-column: 1/4;grid-row: 7/9;background:linear-gradient(#00000000,#111 90%),url(img/wsm.png) left;background-size: 120%;">
-					<p class="tit" style="margin: 100px 0 0px 10px;color: #fff;">微软发布 Windows Subsystem for MacOS</p>
+					<p class="tit" style="margin: 100px 0 0px 10px;color: #fff;">开发常用代码</p>
 					<a class="a" style="margin: 0 0 0 170px;font-size: 17px;color: #9dd0fb;">详细信息 ></a>
 				</div>
 				<div class="card" style="grid-column: 3/6;grid-row: 5/7;background:linear-gradient(#00000000 0 30%,var(--bg) 70%),url(img/mc.jpg) bottom;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 -20px 10px;">今日凌晨,Minecraft把代理权交给中国航天员谭景元,网易败下阵来了?</p>
+					<p class="tit" style="margin: 100px 0 -20px 10px;">我的世界</p>
 					<a class="a" style="margin: 0 0 0 170px;font-size: 17px;">详细信息 ></a>
 				</div>
 				<div class="card" style="grid-column: 1/4;grid-row: 3/5;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url(img/yq.jpg) center;background-size: cover;">
-					<p class="tit" style="margin: 120px 0 -20px 10px;">中国航天员谭景元昨天下午成功登月</p>
+					<p class="tit" style="margin: 120px 0 -20px 10px;">中国航天员登月</p>
 					<a class="a" style="margin: 0 0 0 150px;font-size: 17px;">详细信息 ></a>
 				</div>
 				<div class="card" style="grid-column: 3/6;grid-row: 9/11;background:linear-gradient(#00000000 0 30%,var(--bg) 80%),url(img/office.png) center;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 0 10px;">微软发布声控Office套件，用户可以用嗓子完成文件编辑</p>
+					<p class="tit" style="margin: 100px 0 0 10px;">微软发布office2025</p>
 					<a class="a" style="margin: 0 0 0 160px;font-size: 17px;">详细信息 ></a>
 				</div>
 				<div class="card"
 					style="grid-column: 1/4;grid-row: 11/13;background:linear-gradient(#00000000,var(--bg) 70%),url(img/earth.webp) center;background-size: cover;">
-					<p class="tit" style="margin: 100px 0 0 10px;">流浪地球4首支预告片发布</p>
+					<p class="tit" style="margin: 100px 0 0 10px;">《三体》观后感</p>
 					<a class="a" style="margin: 5px 0 0 160px;font-size: 17px;">详细信息 ></a>
 				</div>
 				<div class="card" style="grid-column: 1/3;grid-row: 9/11;background:#171b22;">
-					<p class="tit" style="font-size: 19px;margin: 50px 0 0 10px;color: #fff;">想给新闻增加更多奇思妙想?
-						<br />快在github上来提交吧</p>
+					<p class="tit" style="font-size: 19px;margin: 50px 0 0 10px;color: #fff;">想了想更多新闻？
+						<br />前往github</p>
 					<a class="a" win12_title="https://github.com/tjy-gitnub/win12/issues"
 						style="margin: 10px 0 0 70px;font-size: 17px;color: #9dd0fb" onclick="
-					window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">提交issues ></a>
+					window.open('https://github.com/tjy-gitnub/win12/issues','_blank');">提交 ></a>
 				</div>
 			</div>
 		</div>
@@ -786,7 +782,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		</div>
 		<div class="chat">
 			<a class="a btn button" onclick="copilot.init()">开始对话</a>
-			<p style="margin-top: 20px;">新版 AI Copilot 终于上线了！该 AI 由 github@NB-Group 开发与维护<br>使用前请先阅读'>|'左侧的使用事项</p>
+			<p style="margin-top: 20px;">新版 AI Copilot 终于上线了！<br>使用前请先阅读'>|'左侧的使用事项</p>
 		</div>
 		<div class="inputbox disable">
 			<input type="text" class="input" onkeydown="if(event.keyCode==13){copilot.send($(this).val());$(this).val('');this.blur()}">
@@ -1029,7 +1025,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		</div>
 		<div class="b" ondblclick="openapp('about');" ontouchstart="openapp('about');" oncontextmenu="return showcm(event,'desktop.icon',['about',-1]);" appname="about">
 			<img src="icon/about.svg">
-			<p>关于 Win12 网页版</p>
+			<p>关于windows</p>
 		</div>
 		<div class="b" ondblclick="openapp('edge');" ontouchstart="openapp('edge');" oncontextmenu="return showcm(event,'desktop.icon',['edge',-1]);" appname="edge">
 			<img src="icon/edge.svg">
@@ -1070,7 +1066,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		<div id="notice">
 			<div class="cnt">
 				<p class="tit">注意</p>
-				<p>你的电脑即将爆炸</p>
+				<p>您的电脑即将爆炸</p>
 			</div>
 			<div class="btns">
 				<a class="a btn main" onclick="closenotice()">确定</a>
@@ -1396,8 +1392,8 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				<a class="a user">
 					<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="user-clip1"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill3"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill4"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip1)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill3)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill4)" fill-rule="evenodd" /></g></svg>
 					<div>
-						<p>瓶盖</p>
-						<p>tanjingyuan@windows12.com</p>
+						<p>Administrator</p>
+						<p>本地账户</p>
 					</div>
 				</a>
 				<input type="text" class="input" placeholder="查找设置" style="padding-left: 30px;">
@@ -1425,13 +1421,13 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 					<div style="display: flex;margin: 25px;">
 						<p class="s-icon" style="font-size: 70px;margin: -8px 10px 0px 20px;"></p>
 						<div>
-							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Desktop-PingGai</p>
-							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">瓶盖</p>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Administrator的电脑</p>
+							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Administrator</p>
 							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
 						</div>
 					</div>
 					<div class="setting-card">
-						<p style="padding: 10px 15px;"><icon><img src="apps/icons/setting/ms.png"></icon><br>所有功能尽在 Microsoft 账户<br><span style="font-size: 14px;color:var(--text2)">登录后，即可在设备上使用你《最喜爱》的 Microsoft 应用和服务。可以备份设备、让设备更安全，并使用 Microsoft 365 应用版和云储存空间。</span><br><img src="apps/icons/setting/ms365.png"></p>
+						<p style="padding: 10px 15px;"><icon><img src="apps/icons/setting/ms.png"></icon><br>所有功能尽在 Microsoft 账户<br><span style="font-size: 14px;color:var(--text2)">登录后，即可在设备上使用您最喜爱的 Microsoft 应用和服务。可以备份设备、让设备更安全，并使用 Microsoft 365 应用版和云储存空间。</span><br><img src="apps/icons/setting/ms365.png"></p>
 						<div style="padding:  10px 15px;">
 							<a class="a button" onclick="window.location.href='./bluescreen.html?code=YOU_CAN_NOT_SIGN_IN_YOUR_MICROSOFT_ACCOUNT'" win12_title="BSOD is coming!">登录</a>
 						</div>
@@ -1464,8 +1460,8 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 					<div style="display: flex;">
 						<p class="s-icon" style="font-size: 70px;margin: -8px 10px 0px 20px;"></p>
 						<div>
-							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Desktop-PingGai</p>
-							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">瓶盖</p>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Administrator的电脑</p>
+							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Administrator</p>
 							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
 						</div>
 					</div>
@@ -1493,7 +1489,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 						<p class="s-icon" style="font-size: 70px;margin: -8px 10px 0px 20px;"></p>
 						<div>
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">我的蓝牙名称</p>
-							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Blueteeth-PingGai</p>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Administrator的电脑</p>
 							<p class="blueteeth-tips-text" style="color: #7f7f7f;margin:-8px 0 -5px 0;">这是您在其他设备的蓝牙列表中的名称</p>
 							<a style="color: var(--href);text-decoration: underline !important;;" class="a">重命名</a>
 						</div>
@@ -1516,7 +1512,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 						<p class="s-icon" style="font-size: 70px;margin: -8px 15px 0px 20px;"></p>
 						<div>
 							<p style="color: #7f7f7f;margin:-8px 0 -5px 0;">Wifi 已连接</p>
-							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">PingGai - 5G</p>
+							<p style="font-size: 28px;text-overflow: ellipsis;white-space: nowrap;">Administrator - 5G</p>
 							<a style="color: var(--href);text-decoration: underline !important;;" class="a">断开</a>
 						</div>
 					</div>
@@ -1636,8 +1632,8 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 						<a class="a user" style="display:flex">
 							<svg viewBox="0,0,257,344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100px;height: 100px;background-color: var(--hover-b);/* box-shadow: 0 0 10px var(--sd); */width: 60px;width: 60px;height: 60px;border-radius: 50%;padding: 11px;margin-right: 15px;margin-bottom: 15px;" overflow="hidden"><defs><clipPath id="user-clip1"><rect x="382" y="195" width="257" height="344" /></clipPath><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill3"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient><linearGradient x1="351.462" y1="233.56" x2="669.496" y2="500.422" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="user-fill4"><stop offset="0" stop-color="#A964C8" /><stop offset="0.35" stop-color="#A964C8" /><stop offset="0.87" stop-color="#2D8AD5" /><stop offset="1" stop-color="#2D8AD5" /></linearGradient></defs><g clip-path="url(#user-clip1)" transform="translate(-382 -195)"><path d="M637.755 433.872C642.215 515.221 579.577 537.983 508.011 537.983 436.444 537.983 376.676 507.833 383.513 437.11 383.109 425.234 389.59 414.133 398.634 409.891 413.82 402.768 444.753 402.936 507.484 402.997 570.214 403.058 609.164 402.279 621.521 407.947 633.878 413.614 638.011 424.609 637.755 433.872Z" fill="url(#user-fill3)" fill-rule="evenodd" /><path d="M422 285C422 235.847 461.623 196 510.5 196 559.377 196 599 235.847 599 285 599 334.153 559.377 374 510.5 374 461.623 374 422 334.153 422 285Z" fill="url(#user-fill4)" fill-rule="evenodd" /></g></svg>
 							<div style="margin-top: 5px;">
-								<p>瓶盖</p>
-								<p>tanjingyuan@Windows12.com</p>
+								<p>Administrator</p>
+								<p>本地账户</p>
 							</div>
 						</a>
 					</div>
@@ -1757,7 +1753,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				<a class="a btn btn-icon goback"><i class="bi bi-arrow-up"></i></a>
 				<p class="tit"></p>
 				<div class="search">
-					<input type="text" class="input" placeholder="在这里输入你要搜索的内容">
+					<input type="text" class="input" placeholder="在这里输入您要搜索的内容">
 					<input-before class="bi bi-search"></input-before>
 				</div>
 			</div>
@@ -1891,7 +1887,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		<div class="resize-bar"></div>
 		<div class="titbar">
 			<img src="icon/about.svg" class="icon">
-			<p>关于 Windows12 网页版</p>
+			<p>关于windows</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('about')"><i class="bi bi-x-lg"></i></a>
 				<a class="a wbtg max" onclick="maxwin('about')"><i class="bi bi-app"></i></a>
@@ -1912,22 +1908,22 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				<h1 class="tit"><span></span>Windows 12 网页版</h1>
 				<div style="margin-left: 20px;">
 					<h2 class="tit"><span></span>简介</h2>
-					<p>&emsp;&emsp;Windows 12 网页版是一个开源项目，由星源(谭景元)原创，使用 HTML、CSS 和 JavaScript，在网络上模拟、创新操作系统。</p>
-					<p>&emsp;&emsp;此项目已发布至 GitHub，<a onclick="window.open('https://github.com/tjy-gitnub/win12','_blank');" win12_title="https://github.com/tjy-gitnub/win12" class="jump">点击此处查看</a>。</p>
-					<p>&emsp;&emsp;若您对于该项目有任何意见或建议，请在 GitHub 上<a onclick="window.open('https://github.com/tjy-gitnub/win12/issues','_blank');" win12_title="https://github.com/tjy-gitnub/win12/issues" class="jump">提交 issues</a>，您的问题会被尽可能快地解决。</p>
-					<p>&emsp;&emsp;原创作者星源，点击以<a onclick="window.open('https://tjy-gitnub.github.io/','_blank');" win12_title="https://tjy-gitnub.github.io/" class="jump">了解详细</a>。</p>
-					<h2 class="tit"><span></span>开源说明</h2>
-					<p>&emsp;&emsp;此项目是一个开源项目。此项目使用 EPL v2.0 开源许可。开源许可是具有法律效力的合同，请自觉遵守开源许可，尊重他人劳动。</p>
-					<p>&emsp;&emsp;根据许可，你可以对该项目进行传播、分发、修改以及二次发布，包括个人和商业用途。</p>
-					<p>&emsp;&emsp;但您必须给出源码来源，<strong>包括作者，项目链接等</strong>，必须使用相同的协议开源。</p>
-					<p>&emsp;&emsp;若此项目的源码作为项目的一部分与你私有的源码一起发布时，你可以使用其它协议，<strong>但要声明 EPL 部分的内容并声明此部分继续遵循 EPL 协议</strong>。</p>
-					<p>&emsp;&emsp;不是在该项目基础上进行增加、修改的，仅参考源码的，不需要开源，但也仅供学习用途。</p>
-					<h2 class="tit"><span></span>特别感谢</h2>
-					<p>&emsp;&emsp;<strong>特别感谢 @NB-Group</strong></p>
-					<p>&emsp;&emsp;NB-Group 为本项目的后端开发做出了重要贡献</p>
-					<p>&emsp;&emsp;在此表示特别感谢！</p>
-					<h2 class="tit"><span></span>贡献者</h2>
-					<p>&emsp;&emsp;感谢所有项目的贡献者（实时数据，计算方法：即为 Commits 次数）</p>
+					<p>&emsp;&emsp;Windows 12</p>
+					<p>&emsp;&emsp;此项目已发布至 GitHub，<a onclick="window.open('https://github.com/tjy-gitnub/win12','_blank');" win12_title="https://github.com/tjy-gitnub/win12" class="jump">点击查看原开源地址</a>。</p>
+					<p>&emsp;&emsp;提交建议<a onclick="window.open('https://github.com/tjy-gitnub/win12/issues','_blank');" win12_title="https://github.com/tjy-gitnub/win12/issues" class="jump">提交问题</a>，您的问题会被尽可能快地解决。</p>
+					<p>&emsp;&emsp;空<a onclick="window.open('https://tjy-gitnub.github.io/','_blank');" win12_title="https://tjy-gitnub.github.io/" class="jump">空</a>。</p>
+					<h2 class="tit"><span></span>空</h2>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<h2 class="tit"><span></span>空</h2>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<h2 class="tit"><span></span>空</h2>
+					<p>&emsp;&emsp;空</p>
 					<div id="contri">
 						<loading>
 							<svg width="30px" height="30px" viewBox="0 0 16 16">
@@ -1938,7 +1934,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 						</loading>
 					</div>
 					<h2 class="tit"><span></span>Star</h2>
-					<p>&emsp;&emsp;感谢<a class="jump" win12_title="给个 Star 好不好？(即将跳转到：https://github.com/tjy-gitnub/win12/stargazers)" onclick="window.open('https://github.com/tjy-gitnub/win12/stargazers','_blank')">所有支持我们的人</a>。</p>
+					<p>&emsp;&emsp;空<a class="jump" win12_title="给个 Star 好不好？(即将跳转到：https://github.com/tjy-gitnub/win12/stargazers)" onclick="window.open('https://github.com/tjy-gitnub/win12/stargazers','_blank')">空</a>。</p>
 					<div id="StarShow">
 						<loading>
 							<svg width="30px" height="30px" viewBox="0 0 16 16">
@@ -1948,139 +1944,139 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 							</svg>
 						</loading>
 					</div>
-					<h2 class="tit"><span></span>其它</h2>
-					<p>&emsp;&emsp;此项目基于目前 Windows 版本创造，与微软的 Windows 12 正式版本不一致。</p>
-					<p>&emsp;&emsp;此项目绝不附属于微软，且不应与微软操作系统或产品混淆，这也不是 Windows365 cloud PC。</p>
-					<p>&emsp;&emsp;本项目中微软、Windows 和其他示范产品是微软公司的商标。</p>
+					<h2 class="tit"><span></span>空</h2>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
+					<p>&emsp;&emsp;空</p>
 				</div>
 			</div>
 			<div class="cnt update">
 				<h1 class="tit"><span></span>更新记录</h1>
 				<div style="margin-left: 20px;">
-					<details><summary><span>v7.4.2</span> AI Copilot 3.0！</summary><p>
-						&emsp;&emsp;-(更新来自@NB-Group)</p>
-						&emsp;&emsp;-笑死，昨天刚修好就又寄了，这次的船新版本绝对稳定，（理论上）再也不会寄</p>
+					<details><summary><span>v7.4.2</span> 空</summary><p>
+						&emsp;&emsp;空</p>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.4.1</span> AI Copilot 2.0！</summary><p>
-						&emsp;&emsp;-(更新来自@NB-Group)</p>
-						&emsp;&emsp;-修复了ai无法使用的问题</p>
+					<details><summary><span>v7.4.1</span> 空</summary><p>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.4.0</span> AI Copilot！</summary><p>
-						&emsp;&emsp;-(更新来自@NB-Group)</p>
-						&emsp;&emsp;-去掉一些奇怪的东西</p>
-						&emsp;&emsp;-经过我114年的开发，AI Copilot 2.0诞生了！</p>
-						&emsp;&emsp;-开源了AI后端的代码</p>
-						&emsp;&emsp;-细节优化和修复</p>
+					<details><summary><span>v7.4.0</span> 空</summary><p>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.3.7</span> 细节更改</summary><p>
-						&emsp;&emsp;-加入一些奇怪的东西</p>
-						&emsp;&emsp;-细节优化和修复</p>
+					<details><summary><span>v7.3.7</span> 空</summary><p>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.3.6</span> 语音识别球</summary><p>
-						&emsp;&emsp;(更新来自@NB-Group)<br/>
-						&emsp;&emsp;-增加语音识别球</p>
-						&emsp;&emsp;-细节优化和修复</p>
+					<details><summary><span>v7.3.6</span> 空</summary><p>
+						&emsp;&emsp;空<br/>
+						&emsp;&emsp;-空</p>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.3.5</span> 整顿代码</summary><p>
-						&emsp;&emsp;-整顿代码，贡献者必须按本文件开头以及CONTRIBUTING.md的规范编辑代码，否则不予合并，感谢理解<br/>
-						&emsp;&emsp;-重绘新增的一些图标<br>
-						&emsp;&emsp;-细节优化和修复</p>
+					<details><summary><span>v7.3.5</span> 空</summary><p>
+						&emsp;&emsp;-空<br/>
+						&emsp;&emsp;-空<br>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.3.4</span> Edge更新</summary><p>
-						&emsp;&emsp;(更新来自@lh11117)<br>
-						&emsp;&emsp;-Edge 支持全屏<br/>
-						&emsp;&emsp;-Edge 支持收藏夹</p>
+					<details><summary><span>v7.3.4</span> 空</summary><p>
+						&emsp;&emsp;空<br>
+						&emsp;&emsp;-空<br/>
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.3.3</span> 细节优化</summary><p>
-						&emsp;&emsp;细节优化</p>
+					<details><summary><span>v7.3.3</span> 空</summary><p>
+						&emsp;&emsp;空</p>
 					</details>
-					<details><summary><span>v7.3.2</span> 细节更改</summary><p>
-						&emsp;&emsp;没有新增内容 (各位可以抽时间去看看readme.md，一些特殊情况</p>
+					<details><summary><span>v7.3.2</span> 空</summary><p>
+						&emsp;&emsp;空</p>
 					</details>
-					<details><summary><span>v7.3.1</span> Bug修复与细节优化</summary><p>
-						&emsp;&emsp;-删除update.md中重复的字(更新来自 @ZigaoWang )<br />
-						&emsp;&emsp;-修复BIOS无法正确访问的问题(更新来自 @ludonghengsb )</p>
+					<details><summary><span>v7.3.1</span> 空</summary><p>
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.3.0</span> 桌面小组件、Dock自动隐藏、计算器完善和Windows 更新</summary><p>
-						&emsp;&emsp;(更新来自 @User782Tec )<br />
-						&emsp;&emsp;-新增了桌面小组件，可将小组件添加到桌面并调整位置<br />
-						&emsp;&emsp;-新增了编辑模式，可快捷编辑小组件的位置，并提供了相关的快捷入口<br />
-						&emsp;&emsp;-新增了窗口全屏且Dock不在使用时自动隐藏的功能<br />
-						&emsp;&emsp;-为Microsoft Edge浏览器和文件资源管理器新增了后退/前进的功能<br />
-						&emsp;&emsp;-又双叒叕优化计算器的精度问题与安全性问题<br />
-						&emsp;&emsp;-重写更新机制，并完善 Windows 更新<br />
-						&emsp;&emsp;-修复了文件资源管理器中右键文件失效的问题<br />
-						&emsp;&emsp;-修复了文件资源管理器中无法正确显示文件夹中文件的问题<br />
-						&emsp;&emsp;-更换了Python Editor的图标<br />
-						&emsp;&emsp;-完善了开源说明<br />
-						&emsp;&emsp;-其他细节与修复</p>
+					<details><summary><span>v7.3.0</span> 空</summary><p>
+						&emsp;&emsp;空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.2.1</span> README更新、“关于”应用显示实时Star数量、个性化设置支持保存</summary><p>
-						&emsp;&emsp;(更新来自 @lh11117 )<br />
-						&emsp;&emsp;-README更新<br />
-						&emsp;&emsp;-“关于”应用显示实时Star数量<br />
-						&emsp;&emsp;-个性化设置支持保存<br /></p>
+					<details><summary><span>v7.2.1</span> 空</summary><p>
+						&emsp;&emsp;空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br /></p>
 					</details>
-					<details><summary><span>v7.2.0</span> 优化运行、添加Windows12应用、添加WSA</summary><p>
-						&emsp;&emsp;(更新来自 @lh11117 )<br />
-						&emsp;&emsp;-优化运行<br />
-						&emsp;&emsp;-添加Windows12应用<br />
+					<details><summary><span>v7.2.0</span> 空</summary><p>
+						&emsp;&emsp;空<br />
+						&emsp;&emsp;-空调<br />
+						&emsp;&emsp;-空<br />
 						&emsp;&emsp;-添加WSA<br />
-						&emsp;&emsp;-添加shutdown命令<br />
-						&emsp;&emsp;-添加BIOS系统<br />
-						&emsp;&emsp;-支持桌面图标删除<br />
-						&emsp;&emsp;-更丰富的文件目录<br />
-						&emsp;&emsp;-任务管理器支持置顶<br /></p>
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br /></p>
 					</details>
-					<details><summary><span>v7.1.0</span> 计算器进一步修复、离线页面的深色模式</summary><p>
-						&emsp;&emsp;(更新来自 @lh11117)<br />
-						&emsp;&emsp;-进一步修复了计算器精度缺陷和接受输入非法内容的问题<br />
-						&emsp;&emsp;-为Microsoft Edge浏览器的离线界面添加了深色模式版本<br />
-						&emsp;&emsp;-其他一些细节修复<br /></p>
+					<details><summary><span>v7.1.0</span> 空</summary><p>
+						&emsp;&emsp;空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br /></p>
 					</details>
-					<details><summary><span>v7.0.2</span> 计算器修复</summary><p>
-						&emsp;&emsp;(更新来自 @cong1223 和 @iewnfod)<br />
-						&emsp;&emsp;-修复计算器计算加减乘除、平方、平方根等运算的精度问题(来自 @cong1223)<br />
-						&emsp;&emsp;-只允许calc-input输入数字(来自 @iewnfod)<br /></p>
+					<details><summary><span>v7.0.2</span> 空</summary><p>
+						&emsp;&emsp;空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br /></p>
 					</details>
-					<details><summary><span>v7.0.1</span> 资源管理器标签页、离线界面与新闻</summary><p>
-						&emsp;&emsp;-文件资源管理器的标签页(来自 @tjy-gitnub)<br />
-						&emsp;&emsp;-新增了Microsoft Edge浏览器的离线界面(来自 @User782Tec)<br />
-						&emsp;&emsp;-新增新闻(来自 @Nick-DL)<br />
-						&emsp;&emsp;-优化部分UI<br />
-						&emsp;&emsp;-细节优化和修复</p>
+					<details><summary><span>v7.0.1</span> 空</summary><p>
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空</p>
 					</details>
-					<details><summary><span>v7.0.0</span> AI助手,新增多个应用与功能</summary><p>
-						&emsp;&emsp;-Windows 12 AI Copilot(@NB-Group提供api, @tjy-gitnub魔改)<br />
-						&emsp;&emsp;-任务管理器(由 @User782Tec 提供)<br />
-						&emsp;&emsp;-安全中心(由 @NB-Group 提供)<br />
-						&emsp;&emsp;-适配文件系统(由 @NB-Group 提供)(别问我为啥现在才出，要问问@NB-Group)<br />
-						&emsp;&emsp;-窗口云母(Mica)效果(由 @tjy-gitnub 提供，在设置中启用)<br />
-						&emsp;&emsp;-文件资源管理器导航栏(由 @User782Tec 提供)<br />
-						&emsp;&emsp;-任务管理器小组件(由 @User782Tec 提供)<br />
-						&emsp;&emsp;-全新壁纸(由 @tjy-gitnub 提供)<br />
-						&emsp;&emsp;-新增新闻(来自 @for-the-zero)<br />
-						&emsp;&emsp;-修复了终端的灾难性bug<br />
-						&emsp;&emsp;-优化部分UI<br />
-						&emsp;&emsp;-细节优化和修复</p>
+					<details><summary><span>v7.0.0</span> 空</summary><p>
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空调<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空<br />
+						&emsp;&emsp;-空</p>
 					</details>
 					<details>
-						<summary><span>v6.0.0</span> 文件系统,窗口大小,天气小组件,任务栏小组件</summary>
+						<summary><span>v6.0.0</span> 空</summary>
 						<p>
-							&emsp;&emsp;-新增文件系统(由 @NB-Group 之后提供)<br />
-							&emsp;&emsp;-窗口大小调整功能(由 @User782Tec 提供)<br />
-							&emsp;&emsp;-保存桌面布局(由 @User782Tec 提供)<br />
-							&emsp;&emsp;-天气小组件(由 @tjy-gitnub 提供)<br />
-							&emsp;&emsp;-小组件添加到任务栏(由 @tjy-gitnub 提供,目前仅支持天气小组件)<br />
-							&emsp;&emsp;-引入全新提示框(由 @tjy-gitnub 提供)<br />
-							&emsp;&emsp;-新的反馈通道<br />
-							&emsp;&emsp;-修复了有时开机动画不能正确显示的问题<br />
-							&emsp;&emsp;-修复了登录界面不显示的问题<br />
-							&emsp;&emsp;-适配新的主题格式，加速预览图显示<br />
-							&emsp;&emsp;-细节优化和修复</p>
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空<br />
+							&emsp;&emsp;-空</p>
 					</details>
 					<!-- 全部列出来那这个更多意义何在？ -->
-					<a onclick="window.open('update.md','_blank');" win12_title="update.md" class="a jump" style="text-align: center;">更多</a>
+					<a onclick="window.open('update.md','_blank');" win12_title="update.md" class="a jump" style="text-align: center;">没有更多了</a>
 				</div>
 			</div>
 		</div>
@@ -2189,7 +2185,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				</div>
 				<div class="preview-box">
 					<div>Hello</div>
-					<div>你好</div>
+					<div>您好</div>
 					<div>こんにちは</div>
 				</div>
 			</div>
@@ -2304,7 +2300,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		    </div>
 			<div id="save-bar" style="margin:10px;margin-top: 3px;white-space: nowrap;overflow-x: scroll;">
 				<!--收藏夹-->
-				<a onclick="apps.edge.goto('https://tjy-gitnub.github.io/')" win12_title="https://tjy-gitnub.github.io/" class="save-item"><i class="bi bi-file-earmark"></i>星源</a>
+				<a onclick="apps.edge.goto('https://tjy-gitnub.github.io/')" win12_title="https://tjy-gitnub.github.io/" class="save-item"><i class="bi bi-file-earmark"></i>网页</a>
 				<a onclick="apps.edge.goto('https://www.bing.com')" win12_title="https://www.bing.com" class="save-item"><i class="bi bi-file-earmark"></i>Bing</a>
 				<style>
 					#save-bar{
@@ -2369,7 +2365,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		<div class="resize-bar"></div>
 		<div class="titbar">
 			<img src="icon/wsa.png" class="icon">
-			<p>适用于 Android™️ 的 Windows 子系统</p>
+			<p>适用于 Android 的 Windows 子系统</p>
 			<div>
 				<a class="a wbtg red" onclick="hidewin('wsa')"><i class="bi bi-x-lg"></i></a>
 				<a class="a wbtg max" style="pointer-events: none;color: #777;"><i class="bi bi-app"></i></a>
@@ -2468,7 +2464,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				</div>
 			</div>
 			<p>
-				&emsp;&emsp;欢迎使用“相机”应用！本应用由 User782Tec 开发， tjy-gitnub 维护。<br />
+				&emsp;&emsp;欢迎使用“相机”应用<br />
 				&emsp;&emsp;在使用中，此应用将会获取访问您摄像头的权限（用于进行拍摄照片等操作）。此应用不会将任何您的个人信息（包括所拍摄的照片）上传至服务器，更不会泄露给他人。<br />
 				&emsp;&emsp;若您不同意上述协议，则将不能使用此应用。
 			</p>
@@ -2493,7 +2489,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 		<div class="content" id="win-run">
 			<div class="top">
 				<div class="icon"></div>
-				<div class="text">Windows 将根据你所输入的名称，为你打开相应的程序、文件夹、文档或 Internet 资源。</div>
+				<div class="text">Windows 将根据您所输入的名称，为您打开相应的程序、文件夹、文档或 Internet 资源。</div>
 			</div>
 			<div class="open">
 				<div class="prompt">打开: </div>
@@ -2625,7 +2621,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				<p>根据Microsoft软件许可条款，许可如下用户使用本产品</p>
 				<p style="margin:20px 0 0 90px">Administrator</p>
 			</div>
-			<p ondblclick="$(this).hide()" class="a mesg">上面都是胡扯，切勿当真(双击隐藏此消息)</p>
+			<p ondblclick="$(this).hide()" class="a mesg">上面均为真实，切勿质疑</p>
 			<div class="buttons">
 				<a class="a submit act" onclick="hidewin('winver');">确定</a>
 			</div>
@@ -2711,7 +2707,7 @@ showcm(event,id,arg) 显示右键菜单，使用方法：oncontextmenu="return s
 				</div>
 				<div class="cnt 404">
 					<div class="content" style="text-align: center;position:absolute;left:calc(50% - 25px);top:calc(50% - 35px);">
-						<p><b>无筛选结果</b><br />请尝试使用其他名称<span style="text-decoration:line-through" win12_title="你想让开发者秃头吗？QwQ！(双击隐藏此消息)" ondblclick="$(this).hide()">、发布者或 PID </span>键入以进行筛选。</p>
+						<p><b>无筛选结果</b><br />请尝试使用其他名称<span style="text-decoration:line-through" win12_title="空" ondblclick="$(this).hide()">、发布者或 PID </span>键入以进行筛选。</p>
 						<br />
 						<a onclick="document.getElementById('tsk-search').value='';apps.taskmgr.generateProcesses()" style="cursor: pointer;color:var(--href);">重置筛选器</a>
 					</div>
